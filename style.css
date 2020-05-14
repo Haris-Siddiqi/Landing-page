@@ -1,0 +1,237 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.red-button {
+    padding: 15px 35px;
+    background: crimson;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.section-header {
+    padding: 70px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* Header */
+header {
+    background-image: url(unsplash-d2.jpg);
+    background-size: cover;
+    background-position: 70% 50%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header nav {
+    padding: 15px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h2 {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+header nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding-right: 25px;
+}
+
+header nav ul li:last-child {
+    padding-right: 0;
+}
+
+
+/* Banner area */
+.banner-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.banner-area h1 {
+    margin-bottom: 15px;
+    font-family: 'Merienda', cursive;
+}
+
+.banner-area h2 {
+    margin-bottom: 40px;
+}
+
+
+/* About area */
+.about-area {
+    background-color: white;
+    min-height: 80vh;
+}
+
+#about-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#about-container-1 {
+    flex-basis: 30%;
+}
+
+#about-container-2 {
+    flex-basis: 50%;
+}
+
+#about-container-2 p {
+    padding-bottom: 40px;
+}
+
+.about-area img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Services Area */
+.services-area {
+    background-color: silver;
+    min-height: 80vh;
+}
+
+.services-area-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.services-area-container div {
+    width: 20%;
+}
+
+
+/* Contact */
+.contact-area {
+    background-color: white;
+    min-height: 60vh;
+}
+
+.contact-area-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-area-container div {
+    width: 20%;
+}
+
+.contact-area-container a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+
+/* Responsive */
+@media(max-width: 700px) {
+    html, body {
+        font-size: 19px;
+    }
+    body {
+        background-image: url(unsplash-m.jpg);
+    }
+    header nav {
+        flex-direction: column;
+        padding: 0;
+    }
+    header nav h2 {
+        padding: 5px 0;
+    }
+    header nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    header nav ul li {
+        padding: 0;
+    }
+    .banner-area h2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 900px) {
+    #about-container {
+        flex-direction: column;
+    }
+    #about-container-1 {
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }
+    #about-container-2 {
+        margin: 30px auto;
+        text-align: center;
+        width: 90%;
+    }
+    #about-container h3 {
+        padding-bottom: 10px;
+    }
+    .services-area-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-area-container div {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .contact-area-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-area-container div {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+}
